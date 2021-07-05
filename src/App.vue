@@ -1,10 +1,8 @@
 <template>
   <h1>Reaction timer</h1>
   <button @click="start" :disabled="isPlaying">play</button>
-  <!--
-    <Block v-if="isPlaying" :delay="delay" />
-  -->
-</template>
+  <Block v-if="isPlaying" :delay="delay" />
+ </template>
 
 <script>
 import Block from './components/Block.vue';
